@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namhyeon's portfolio</title>
+    <!-- css -->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="style.css">
+      <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- SCRIPT -->
+    <script src="https://kit.fontawesome.com/7ffbaeea4e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/CSSRulePlugin.min.js"></script>
+     <script src="main.js" defer></script>
+    
+</head>
+<body>
+    
+          <nav id="navbar">
+        <div class="center">
+            <div class="navbar__logo">
+            <h1><a href="#">NamhyeonLee </a></h1>
+            <img src="imgs/logo2.png" alt="logo">
+            <!-- <p>fontend-developer</p> -->
+        </div>
+        <div class="navbar__menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        </div>
+        
+
+    </nav>
+    <div class="container">
+    <section id="home">
+        <div class="home__top"></div>
+        <div class="home__container">
+            <div class="profile">
+                <div class="c1"></div>
+                <div class="c1"></div>
+                <div class="c1"></div>
+            </div>
+            <h1 class="home__title">Hello, I'm Namhyeon Lee</h1>
+    <h2 class="home__description"> A Web publisher & Frontend-developer</h2>
+    <div class="home__contact">
+        <a href="https://www.linkedin.com/in/namhyeon-lee-948226149/"><span>Contact Me</span></a>
+        <div class="cursor"></div>
+    </div>
+        </div>
+        <div class="home__bottom"></div>
+ 
+    </section>
+    <section id="skill">
+        <div class="center">
+             <h2 class="skill__title">What I can do</h2>
+        <ul class="skillWrap">
+            <li>
+                <a href="#"><i class="far fa-file-code"></i></a>
+                <h3>HTML5</h3>
+                <p>웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+                    장고 템플릿 문법을 적절히 적용하여 원하는 데이터를 
+                    원하는 위치에 넣을 수 있도록 연습하였습니다.</p>
+            </li>
+             <li>
+                <a href="#"><i class="fab fa-css3"></i></a>
+                <h3>CSS3</h3>
+                <p>웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+                    장고 템플릿 문법을 적절히 적용하여 원하는 데이터를 
+                    원하는 위치에 넣을 수 있도록 연습하였습니다.</p>
+            </li>
+             <li>
+                <a href="#"><i class="fab fa-node-js"></i></a>
+                <h3>Javascript</h3>
+                <p>웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+                    장고 템플릿 문법을 적절히 적용하여 원하는 데이터를 
+                    원하는 위치에 넣을 수 있도록 연습하였습니다.</p>
+            </li>
+             <li>
+                <a href="#"><i class="fab fa-react"></i></a>
+                <h3>React</h3>
+                <p>웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+                    장고 템플릿 문법을 적절히 적용하여 원하는 데이터를 
+                    원하는 위치에 넣을 수 있도록 연습하였습니다.</p>
+            </li>
+             <li>
+                <a href="#"><i class="fab fa-vuejs"></i></a>
+                <h3>Vue</h3>
+                <p>웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+                    장고 템플릿 문법을 적절히 적용하여 원하는 데이터를 
+                    원하는 위치에 넣을 수 있도록 연습하였습니다.</p>
+            </li>
+             <li>
+                <a href="#"><i class="fas fa-fill-drip"></i></a>
+                <h3>Photoshop & Premiere pro</h3>
+                <p>웹서비스를 기획하며 직접 html 템플릿을 구성하고, 
+                    장고 템플릿 문법을 적절히 적용하여 원하는 데이터를 
+                    원하는 위치에 넣을 수 있도록 연습하였습니다.</p>
+            </li>
+            
+
+        </ul>
+
+        </div>
+
+    </section>
+    <section id="projects" >
+        <div class="center">
+            <div class="projectWrap">
+            <div class="p project1">
+            <div class="project__img">
+                <a href="https://namhyeonlee.github.io/LUSH-RENEWAL-SITE/"> <img src="imgs/project1.png" alt="project1"></a>
+                <div class="scroll-down"><img src="imgs/down-arrow.svg" alt=""></div>
+            </div>
+            <div class="project__description">
+                <div class="right">
+                    <h1 class="order">01.</h1>
+                <h1 class="project__title">LUSH <br> WEBSITE</h1>
+
+                </div>
+                <div class="left">
+                    <div class="tabBtn">
+                        <button class="tab__btn selected" data-filter="project">project</button>
+                    <button  class="tab__btn" data-filter="function">function</button>
+                    <button class="tab__btn" data-filter="stack">stack</button>
+
+                    </div>
+                    
+
+                    <div class="tabBox">
+                        <div class="projectText visible" data-type="project" data-type="selected">
+                            러쉬 웹사이트를 재구성하여 반응형 웹사이트로
+                            구현을 하였습니다.
+                        </div>
+                        <div class="functionText" data-type="function">
+                            반응형 웹사이트 <br>
+                            배너 슬라이드
+                        </div>
+                        <div class="stackText" data-type="stack">
+                            HTML,CSS,JQUERY
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+
+        </div>
+        <div class="p project2">
+            <div class="project__img">
+                <a href="https://namhyeonlee.github.io/TRAVEL-BOOKING-SITE/"><img src="imgs/project2.png" alt=""></a>
+            </div>
+            <div class="project__description">
+                <div class="right">
+                    <h1 class="order">02.</h1>
+                <h1 class="project__title">TRAVEL <br> WEBSITE</h1>
+
+                </div>
+                <div class="left">
+                    <div class="tabBtn tabBtn2">
+                        <button class="tab__btn selected" data-filter="project">project</button>
+                    <button  class="tab__btn" data-filter="function">function</button>
+                    <button class="tab__btn" data-filter="stack">stack</button>
+
+                    </div>
+                    
+
+                    <div class="tabBox tabBox2">
+                        <div class="projectText visible" data-type="project" data-type="selected">
+                            여행 예약 웹사이트를 반응형으로 구현하였습니다.
+                        </div>
+                        <div class="functionText" data-type="function">
+                            날짜, 게스트 인원수 선택 <br>
+                            가고싶은 나라 날씨 검색
+                        </div>
+                        <div class="stackText" data-type="stack">
+                            HTML, SCSS, JVASCRIPT, JQUERY
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p project3">
+            <div class="project__img">
+                <a href="#"><img src="imgs/project3.png" alt=""> </a>
+            </div>
+            <div class="project__description">
+                <div class="right">
+                    <h1 class="order">03.</h1>
+                <h1 class="project__title">E-C0MMERCE <br>SITE</h1>
+
+                </div>
+                <div class="left">
+                    <div class="tabBtn tabBtn3">
+                        <button class="tab__btn selected" data-filter="project">project</button>
+                    <button  class="tab__btn" data-filter="function">function</button>
+                    <button class="tab__btn" data-filter="stack">stack</button>
+
+                    </div>
+                    
+
+                    <div class="tabBox tabBox3">
+                        <div class="projectText visible" data-type="project" data-type="selected">
+                            REACT를 사용하여 쇼핑몰 웹사이트를 구현하였으며 
+                            메인페이지는 GSAP 라이브러리를 사용하여 좀 더 역
+                            동적으로 사이트를 구현하였습니다
+                        </div>
+                        <div class="functionText" data-type="function">
+                            장바구니 기능 구현<br>
+                            제품 상세페이지
+                        </div>
+                        <div class="stackText" data-type="stack">
+                            HTML, CSS, REACT, GSAP
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            </div>
+        </div>
+        
+    </section>
+<section id="about">
+    <div class="center aboutme">
+        <div class="aboutLeft">
+            <p class="text1"><span class="fill">Say</span> a simple <span class="fill">Hello!</span> </p>
+    <p class="text2">I'm <span>Namhyeon</span></p>
+    <p class="me"><img src="imgs/me.jpg" alt=""></p>
+    <p class="text3">I'm a <span class="fill">Frontend-developer</span></p>
+    <p class="text4">who have <span class="fill">passion</span> for <span class="fill">UI/UX</span> </p>
+        </div>
+        <div class="aboutRight">
+            <div class="diagram1"></div>
+             <div class="diagram2"></div>
+
+        </div>
+        
+    </div>
+
+    
+
+</section>
+<section id="contact">
+    <div class="center contact__info">
+        <h1 class="contact__title">Let's talk</h1>
+  <h2 class="contact__email">zkdn4067@gmail.com</h2>
+  <div class="contact__links">
+    <a href="https://github.com/namhyeonlee"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/namhyeon-lee-948226149/"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <p class="contact__rights">2020 Dream Coding Nami - All rights reserved
+  </p>
+  
+
+    </div>
+  
+</section>
+    </div>
+    <!-- navbar -->
+  
+
+    
+
+
+
+    
+</body>
+</html>
