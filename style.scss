@@ -346,6 +346,42 @@ body {
                 margin-bottom: 20px;
             }
 
+            .graph {
+                margin: 0 auto;
+                width: 180px;
+                height: 20px;
+                border-radius: 30px;
+                background-color: $green;
+                position: relative;
+                >div{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 30px;
+                    background-color: #afecdf;
+                }
+                .html{
+                    width: 90%;
+                }
+                .css{
+                    width: 90%;
+                }
+                .js{
+                    width: 70%;
+                }
+                .react{
+                    width: 60%;
+                }
+                .vue{
+                    width: 50%;
+                }
+                .etc{
+                    width: 70%;
+                }
+
+
+            }
+
         }
     }
 
