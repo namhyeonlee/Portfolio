@@ -1,3 +1,32 @@
+//scroll to section
+
+const navbarMenu = document.querySelector('.navbar__menu>ul');
+navbarMenu.addEventListener('click', (e) => {
+  const target = e.target;
+  const link = target.dataset.link;
+  if (link === null) {
+    return;
+  }
+  
+  const scrollTo = document.querySelector(link);
+  scrollTo.scrollIntoView({behavior:'smooth'});
+
+  
+});
+
+//home transparent
+
+// const homeContainer = document.querySelector('.home__container');
+// const homeHeight = homeContainer.getBoundingClientRect().height;
+// const profile = document.querySelector('.profile');
+// console.log(homeHeight);
+// document.addEventListener('scroll', () => {
+//   profile.style.opacity = 1 - window.screenY / homeHeight;
+  
+// })
+
+
+
 //project animation
 
 gsap.registerPlugin(ScrollTrigger);
@@ -26,6 +55,8 @@ gsap.to(sections, {
     
 // });
 
+
+
 let tl = gsap.timeline({
    
   scrollTrigger: {
@@ -45,9 +76,9 @@ let tl = gsap.timeline({
 tl.addLabel("start")
   .from(".fill", {color: "transparent"})
   .addLabel("color")
-  .from(".fill", {color: "#fff4be"})
+  .from(".fill", {color: "#fdff77"})
   .addLabel("spin")
-  .to(".fill", {color: "#fff4be"})
+  .to(".fill", {color: "#fdff77"})
   .addLabel("end");
 
 
@@ -101,33 +132,5 @@ function tab(name,name2,name3) {
 tab(tabBtn, tabBtns, descriptions);
 tab(tabBtn2, tabBtns2, descriptions2);
 tab(tabBtn3, tabBtns3, descriptions3);
-
-
-// tabBtn.addEventListener('click', (e) => {
-//   const target = e.target;
-
-//   const filter = e.target.dataset.filter;
-  
-//   if (filter == null) {
-//     return;
-//   }
-//   tabBtns.forEach((btn) => {
-//     if (target === btn) {
-//       btn.classList.add('selected');
-//     } else {
-//       btn.classList.remove('selected');
-//     }
-// })
-
-  
-
-//   descriptions.forEach((project) => {
-//     if (filter === project.dataset.type) {
-//       project.classList.add('visible');
-//     } else {
-//       project.classList.remove('visible');
-//     }
-//   })
-// });
 
 

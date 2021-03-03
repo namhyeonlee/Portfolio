@@ -81,6 +81,7 @@ body {
 #navbar {
     background: $yellow;
     height: 100px;
+    z-index: 100;
 
 
     .center {
@@ -154,17 +155,21 @@ body {
     .home__top {
         height: 40%;
         background: $yellow;
+       
 
     }
 
     .home__container {
         position: absolute;
+        height: 500px;
         top: 10%;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
         flex-direction: column;
         align-items: center;
+         
+       
 
         .profile {
             width: 350px;
@@ -172,6 +177,7 @@ body {
             border-radius: 50%;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.20);
             position: relative;
+           
 
             background: {
                 color: black;
@@ -552,25 +558,27 @@ body {
 #about {
     background-color: $green;
      padding: 100px 0;
-     display: none;
+    //  display: none;
     
 
      .aboutme{
-         display: flex;
-         justify-content: space-between;
+        //  display: flex;
+        //  justify-content: space-between;
         padding-top: 50px;
        
 
           .aboutLeft {
-              width: 50%;
+            width: 800px;
               text-align: center;
+              margin: 0 auto;
+             
             //   background-color: pink;
               
               p {
                   font-size: 47px;
                   font-family: $font2;
                   letter-spacing: 0.1em;
-                  margin: 5px 0;
+                  margin: 20px 0;
                   color: transparent;
                   -webkit-text-stroke: 2px #fff4be;
 
@@ -579,7 +587,14 @@ body {
                      
                       
                   }
+                  
                 
+              }
+              .text2 {
+                  margin-bottom: -50px;
+              }
+              .text3 {
+                  margin-top: -50px;
               }
               
 
@@ -594,10 +609,11 @@ body {
                   
                   img {
                       display: block;
-                      height: 250px;
+                      height: 200px;
                       width: 180px;
                       margin: auto;
-                      padding-top: 30px;
+                      padding-top: 50px;
+                      
                     //   height: 250px;
                     //   position: absolute;
                     //   top: 50%;
