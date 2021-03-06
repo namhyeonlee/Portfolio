@@ -26,12 +26,35 @@ navbarMenu.addEventListener('click', (e) => {
 // })
 
 
+//gsap
 
-//project animation
+// home animation
+gsap.from(".home__title", { x: -200, duration: 1 });
+gsap.from(".home__description", { x: 200, duration: 1 });
+
+//skill graph
+
+gsap.from(".graph>div", {
+  scrollTrigger: {
+    trigger: "#skill",
+    scrub: true,
+    pin: true,
+    start: "top top",
+    end: "+=20%"
+  },
+  scaleX: 0, 
+  transformOrigin: "left center", 
+  ease: "none"
+});
+
 
 gsap.registerPlugin(ScrollTrigger);
 
+ScrollTrigger.defaults({
+  toggleActions: "restart pause resume pause"
+});
 
+//project animation
 let sections = gsap.utils.toArray(".p");
 
 gsap.to(sections, {
@@ -47,15 +70,7 @@ gsap.to(sections, {
   }
 });
 
-// //about me text animation
-// gsap.to(".fill", {
-  
-//     duration: 2,
-//     color: "red", 
-    
-// });
-
-
+// about me text animation
 
 let tl = gsap.timeline({
    
