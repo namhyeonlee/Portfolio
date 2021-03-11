@@ -40,7 +40,7 @@ gsap.from(".graph>div", {
     scrub: true,
     pin: true,
     start: "top top",
-    end: "+=20%"
+    end: "+=100%"
   },
   scaleX: 0, 
   transformOrigin: "left center", 
@@ -113,6 +113,10 @@ tabBtn3 = document.querySelector('.tabBtn3');
 tabBtns3 = document.querySelectorAll('.tabBtn3>button');
 descriptions3 = document.querySelectorAll('.tabBox3>div');
 
+tabBtn4 = document.querySelector('.tabBtn4');
+tabBtns4 = document.querySelectorAll('.tabBtn4>button');
+descriptions4 = document.querySelectorAll('.tabBox4>div');
+
 
 function tab(name,name2,name3) {
   name.addEventListener('click', (e) => {
@@ -147,5 +151,6 @@ function tab(name,name2,name3) {
 tab(tabBtn, tabBtns, descriptions);
 tab(tabBtn2, tabBtns2, descriptions2);
 tab(tabBtn3, tabBtns3, descriptions3);
+tab(tabBtn4, tabBtns4, descriptions4);
 
 

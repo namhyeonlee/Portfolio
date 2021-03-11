@@ -267,12 +267,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 300%;
+  width: 400%;
   padding-top: 100px;
   background: rgba(163, 184, 167, 0.3);
 }
 #projects .projectWrap > div {
-  width: 33.33%;
+  width: 25%;
   height: 600px;
   position: relative;
 }
