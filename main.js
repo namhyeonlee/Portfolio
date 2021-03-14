@@ -117,6 +117,10 @@ tabBtn4 = document.querySelector('.tabBtn4');
 tabBtns4 = document.querySelectorAll('.tabBtn4>button');
 descriptions4 = document.querySelectorAll('.tabBox4>div');
 
+tabBtn5 = document.querySelector('.tabBtn5');
+tabBtns5 = document.querySelectorAll('.tabBtn5>button');
+descriptions5 = document.querySelectorAll('.tabBox5>div');
+
 
 function tab(name,name2,name3) {
   name.addEventListener('click', (e) => {
@@ -152,5 +156,6 @@ tab(tabBtn, tabBtns, descriptions);
 tab(tabBtn2, tabBtns2, descriptions2);
 tab(tabBtn3, tabBtns3, descriptions3);
 tab(tabBtn4, tabBtns4, descriptions4);
+tab(tabBtn5, tabBtns5, descriptions5);
 
 

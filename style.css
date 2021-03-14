@@ -267,12 +267,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 400%;
+  width: 500%;
   padding-top: 100px;
   background: rgba(163, 184, 167, 0.3);
 }
 #projects .projectWrap > div {
-  width: 25%;
+  width: 20%;
   height: 600px;
   position: relative;
 }
@@ -337,9 +337,9 @@ body {
 #projects .projectWrap > div .project__description .left .tabBox {
   margin-top: 30px;
   width: 280px;
-  height: 150px;
+  height: 200px;
   border-radius: 5px;
-  line-height: 30px;
+  line-height: 25px;
   padding: 10px;
   font-size: 18px;
   font-family: "canela-italic";
