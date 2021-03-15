@@ -106,8 +106,8 @@ body {
   position: relative;
   background-color: black;
   background-image: url(imgs/profile.jpeg);
-  background-position: center center;
-  background-size: cover;
+  background-position: 30% 10%;
+  background-size: 120% 130%;
 }
 #home .home__container .profile > div {
   position: absolute;
