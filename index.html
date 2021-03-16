@@ -60,7 +60,7 @@
     </div>
         </div>
         <div class="home__bottom"></div>
- 
+
     </section>
     <section id="skill">
         <div class="center">
@@ -330,9 +330,15 @@
     
 
 </section>
+
 <section id="contact">
     <div class="center contact__info">
-        <h1 class="contact__title">Let's talk</h1>
+        <!-- <h1 class="contact__title">Let's talk</h1> -->
+        <div class="svgText">
+        <svg viewBox="0 0 1320 300">
+	<text x="50%" y="50%" dy="40px" text-anchor="middle">LET'S TALK</text>
+</svg>
+</div>
   <h2 class="contact__email">zkdn4067@gmail.com</h2>
   <div class="contact__links">
     <a href="https://github.com/namhyeonlee"><i class="fab fa-github"></i></a>
@@ -346,13 +352,22 @@
   
 </section>
     </div>
-    <!-- navbar -->
+
   
-
-    
-
-
-
     
 </body>
+<script>
+        function loading_st() {
+            var ct_left = (parseInt(window.screen.width) - 450) / 2;
+            var ct_top = (parseInt(window.screen.height)) / 3;
+            layer_str = "<div id='loading_layer' style='position:absolute; background-color:; font-size:15px; left:" + ct_left + "px; top:" + ct_top + "px; width:400px; height:; padding:50px; text-align:center; vertical-align:middle; z-index:1000; font-weight: bold;'>로딩중입니다.</div>"
+            document.write(layer_str);
+        }
+        function loading_ed() {
+            var ta = document.getElementById('loading_layer');
+            ta.style.display = 'none';
+        }
+        loading_st();
+        window.onload = loading_ed;
+</script>
 </html>
