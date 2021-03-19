@@ -61,17 +61,54 @@ body {
   margin: auto;
 }
 
+/* loader */
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff4be;
+  z-index: 2;
+  overflow: hidden;
+}
+.loader marquee {
+  opacity: 0.2;
+  text-transform: uppercase;
+  line-height: 180px;
+  margin: 0;
+  padding: 0;
+  color: #646464;
+  font-size: 200px;
+  font-family: "canela-italic";
+}
+.loader .intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.loader .intro h1 {
+  font-size: 124px;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #fff;
+  font-family: "canela-italic";
+}
+
 /* navbar */
 #navbar {
-  background: #fff4be;
+  background: transparent;
+  width: 100%;
   height: 100px;
   z-index: 100;
+  position: fixed;
 }
 #navbar .center {
   position: relative;
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
+  margin: 0 auto;
 }
 #navbar .center .navbar__logo {
   position: relative;
@@ -109,16 +146,22 @@ body {
   height: 100vh;
   position: relative;
 }
+#home .blocks {
+  display: flex;
+  font-size: 140px;
+  color: #8d785b;
+  position: absolute;
+}
 #home .home__top {
-  height: 40%;
+  height: 50%;
   background: #fff4be;
 }
 #home .home__container {
   position: absolute;
   height: 500px;
-  top: 10%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,7 +233,7 @@ body {
   transition: transfrom 0.3s ease;
 }
 #home .home__bottom {
-  height: 60%;
+  height: 50%;
   background: #a3b8a7;
 }
 
@@ -383,19 +426,22 @@ body {
 /* about me */
 #about {
   background-color: #a3b8a7;
+  height: 500px;
   padding: 100px 0;
 }
 #about .aboutme {
-  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px 0;
 }
 #about .aboutme .aboutLeft {
-  width: 800px;
+  width: 50%;
   text-align: center;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 #about .aboutme .aboutLeft p {
-  font-size: 47px;
-  font-family: "canela-italic";
+  font-size: 35px;
+  font-family: "canela";
   letter-spacing: 0.1em;
   margin: 20px 0;
   color: transparent;
@@ -403,53 +449,34 @@ body {
 }
 #about .aboutme .aboutLeft p .fill {
   transition: 1s;
-}
-#about .aboutme .aboutLeft .text2 {
-  margin-bottom: -50px;
-}
-#about .aboutme .aboutLeft .text3 {
-  margin-top: -50px;
-}
-#about .aboutme .aboutLeft .me {
-  width: 300px;
-  height: 300px;
-  background-image: url(imgs/mebg4.jpg);
-  background-size: cover;
-  margin: 0 auto;
-  z-index: -10;
-}
-#about .aboutme .aboutLeft .me img {
-  display: block;
-  height: 200px;
-  width: 180px;
-  margin: auto;
-  padding-top: 50px;
+  font-size: 40px;
 }
 #about .aboutme .aboutRight {
-  width: 50%;
-  position: relative;
+  width: 40%;
+  height: 450px;
+  border: 1px solid white;
 }
-#about .aboutme .aboutRight > div {
-  width: 350px;
-  height: 350px;
-  border: 1px dashed #d0fff5;
-  border-radius: 50%;
-  position: absolute;
-  top: 15%;
+#about .aboutme .aboutRight .meimg {
+  margin: 20px auto;
+  width: 70%;
+  height: 80%;
+  background-image: url(imgs/me2.jpg);
+  background-size: cover;
+  background-position: center center;
 }
-#about .aboutme .aboutRight .diagram1 {
-  left: 20px;
-  transition: 1s;
-  animation: move 50s linear infinite;
+#about .aboutme .aboutRight .insta {
+  text-align: right;
+  padding-right: 50px;
 }
-#about .aboutme .aboutRight .diagram2 {
-  right: 20px;
-  transition: 1s;
-  animation: move2 50s linear infinite;
+#about .aboutme .aboutRight .insta a {
+  color: white;
+  font-size: 18px;
+  margin-right: 20px;
 }
 
 #contact {
   text-align: center;
+  width: 100%;
   height: 500px;
   background-color: #fff4be;
   position: relative;

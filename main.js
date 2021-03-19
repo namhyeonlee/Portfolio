@@ -1,3 +1,13 @@
+//preloading
+ TweenMax.to(".loader", 2.2, {
+    delay: 5,
+    top: "-100%",
+    ease: Expo.easeInOut
+});
+//전체
+
+ 
+
 //scroll to section
 
 const navbarMenu = document.querySelector('.navbar__menu>ul');
@@ -14,26 +24,59 @@ navbarMenu.addEventListener('click', (e) => {
   
 });
 
-//home transparent
-
-// const homeContainer = document.querySelector('.home__container');
-// const homeHeight = homeContainer.getBoundingClientRect().height;
-// const profile = document.querySelector('.profile');
-// console.log(homeHeight);
-// document.addEventListener('scroll', () => {
-//   profile.style.opacity = 1 - window.screenY / homeHeight;
-  
-// })
-
 
 //gsap
+//intro
 
-// home animation
-gsap.from(".home__title", { x: -200, duration: 1 });
-gsap.from(".home__description", { x: 200, duration: 1 });
+      TweenMax.from(".profile", 2, {
+			 delay: 5.5,
+    y: 10,
+    opacity: 0,
+    ease: Expo.easeInOut
+      });
+      TweenMax.from(".c1", 2.4, {
+			opacity: 0,
+				y: 60,
+				ease: Expo.easeInOut,
+				delay: 0.6,
+      });
+     
+     
+      TweenMax.from(".navbar__menu > ul", 2, {
+					delay: 6.2,
+    y: 60,
+    opacity: 0,
+    ease: Expo.easeInOut
+			});
+TweenMax.from(".navbar__logo", 2, {
+        	delay: 6.2,
+    y: 60,
+    opacity: 0,
+    ease: Expo.easeInOut
+				
+      });
+      TweenMax.from(".home__title", 2, {
+				delay: 6,
+    y: 10,
+    opacity: 0,
+    ease: Expo.easeInOut
+      });
+      TweenMax.from(".home__description", 2, {
+				delay: 6.1,
+    y: 10,
+    opacity: 0,
+    ease: Expo.easeInOut
+      });
+      TweenMax.from(".home__contact", 2, {
+					delay: 6.2,
+    y: 10,
+    opacity: 0,
+    ease: Expo.easeInOut
+      });
+      
+
 
 //skill graph
-
 gsap.from(".graph>div", {
   scrollTrigger: {
     trigger: "#skill",
@@ -46,6 +89,20 @@ gsap.from(".graph>div", {
   transformOrigin: "left center", 
   ease: "none"
 });
+
+gsap.from(".aboutme>div", {
+  scrollTrigger: {
+    trigger: "#about",
+    scrub: true,
+    pin: true,
+    start: "top top",
+    end: "+=10%"
+  },
+  x: -100, 
+  transformOrigin: "left center", 
+  ease: "none"
+});
+
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -96,10 +153,29 @@ tl.addLabel("start")
   .to(".fill", {color: "#fdff77"})
   .addLabel("end");
 
+//aboutme scroll move
+
+  let proxy = { skew: 0 },
+    skewSetter = gsap.quickSetter(".skewElem", "skewY", "deg"), // fast
+  clamp = gsap.utils.clamp(-20, 20); 
+    
+  ScrollTrigger.create({
+  onUpdate: (self) => {
+      let skew = clamp(self.getVelocity() / -300);
+
+        if (Math.abs(skew) > Math.abs(proxy.skew)) {
+      proxy.skew = skew;
+      gsap.to(proxy, {skew: 0, duration: 0.8, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
+    }
+  }
+  });
+
+gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
+  
+
 
 
 //project tab 
-
 
 tabBtn = document.querySelector('.tabBtn');
 tabBtns = document.querySelectorAll('.tabBtn>button');
