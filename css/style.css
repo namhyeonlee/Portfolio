@@ -1,0 +1,576 @@
+@keyframes move {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes move2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes arrow-down {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0deg) translate(0, 20px);
+    opacity: 0;
+  }
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: #4d5f75;
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: #4d5f75;
+  }
+  80% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: #4d5f75;
+    stroke-width: 3;
+  }
+  100% {
+    fill: #4d5f75;
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+body {
+  background-color: #fff4be;
+}
+
+.center {
+  width: 1200px;
+  margin: auto;
+}
+
+/* loader */
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff4be;
+  z-index: 2;
+  overflow: hidden;
+}
+.loader marquee {
+  opacity: 0.2;
+  text-transform: uppercase;
+  line-height: 180px;
+  margin: 0;
+  padding: 0;
+  color: #646464;
+  font-size: 200px;
+  font-family: "canela-italic";
+}
+.loader .intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.loader .intro h1 {
+  font-size: 124px;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #fff;
+  font-family: "canela-italic";
+}
+
+/* navbar */
+#navbar {
+  background: transparent;
+  width: 100%;
+  height: 50px;
+  z-index: 100;
+  position: fixed;
+}
+#navbar .center {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+#navbar .center .navbar__logo {
+  position: relative;
+  height: 50px;
+  width: 160px;
+}
+#navbar .center .navbar__logo h1 a {
+  font-size: 18px;
+  font-family: "canela";
+}
+#navbar .center .navbar__logo h1 p {
+  font-family: "canela";
+}
+#navbar .center .navbar__logo img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: -18px;
+  right: 0;
+}
+#navbar .center .navbar__menu ul {
+  display: flex;
+  justify-content: space-between;
+  font-family: "canela";
+}
+#navbar .center .navbar__menu ul li {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+/* container */
+/*  home */
+#home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#home .blocks {
+  display: flex;
+  font-size: 140px;
+  color: #8d785b;
+  position: absolute;
+}
+#home .home__top {
+  height: 50%;
+  background: #fff4be;
+}
+#home .home__container {
+  position: absolute;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#home .home__container .profile {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  background-color: black;
+  background-image: url(../imgs/profile.jpeg);
+  background-position: 30% 10%;
+  background-size: 120% 130%;
+}
+#home .home__container .profile > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #e2f5e5;
+  border-radius: 38% 62% 63% 37%/41% 44% 56% 59%;
+  transition: 0.5s;
+}
+#home .home__container .profile .c1 {
+  animation: move 6s linear infinite;
+}
+#home .home__container .profile .c2 {
+  animation: move2 4s linear infinite;
+}
+#home .home__container .profile .c3 {
+  animation: move2 10s linear infinite;
+}
+#home .home__container .home__title {
+  margin-top: 50px;
+  font-size: 32px;
+  font-family: "canela-italic";
+}
+#home .home__container .home__description {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: lighter;
+  color: #5e5d5d;
+}
+#home .home__container .home__contact a {
+  transition: all 0.3s ease;
+  position: relative;
+}
+#home .home__container .home__contact a span {
+  font-family: "founders";
+  font-weight: 300;
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  pointer-events: none;
+  transition: transform 0.1s linear;
+}
+#home .home__container .home__contact a:hover ~ .cursor {
+  transform: translate(-50%, -50%) scale(8);
+}
+#home .home__container .home__contact .cursor {
+  pointer-events: none;
+  position: absolute;
+  padding: 0.3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transition: transfrom 0.3s ease;
+}
+#home .home__bottom {
+  height: 50%;
+  background: #a3b8a7;
+}
+
+/* skills */
+#skill {
+  text-align: center;
+  background: #fff4be;
+}
+#skill .skill__title {
+  font-family: "canela-italic";
+  font-size: 40px;
+  padding: 50px 0;
+  color: #444;
+  position: relative;
+}
+#skill .skill__title::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #444;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+}
+#skill .skillWrap {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 80px;
+}
+#skill .skillWrap li {
+  width: 30%;
+  margin: 1.5%;
+}
+#skill .skillWrap li a {
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  background: #a5c9c1;
+  font-size: 40px;
+  color: #d5fff2;
+  line-height: 100px;
+}
+#skill .skillWrap li h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#skill .skillWrap li .graph {
+  margin: 0 auto;
+  width: 180px;
+  height: 20px;
+  border-radius: 30px;
+  background-color: #a3b8a7;
+  position: relative;
+}
+#skill .skillWrap li .graph > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: #afecdf;
+}
+#skill .skillWrap li .graph .html {
+  width: 90%;
+}
+#skill .skillWrap li .graph .css {
+  width: 90%;
+}
+#skill .skillWrap li .graph .js {
+  width: 70%;
+}
+#skill .skillWrap li .graph .react {
+  width: 60%;
+}
+#skill .skillWrap li .graph .vue {
+  width: 50%;
+}
+#skill .skillWrap li .graph .etc {
+  width: 70%;
+}
+
+/* projects */
+#projects {
+  background: #fff4be;
+  width: 100%;
+}
+#projects .center {
+  overflow-x: hidden;
+  padding-top: 100px;
+}
+#projects .projectWrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 500%;
+  padding-top: 100px;
+  background: rgba(163, 184, 167, 0.3);
+}
+#projects .projectWrap > div {
+  width: 20%;
+  height: 600px;
+  position: relative;
+}
+#projects .projectWrap .project1 .scroll-down {
+  padding-top: 30px;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  animation: arrow-down 2s linear infinite;
+}
+#projects .projectWrap .project1 .scroll-down img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#projects .projectWrap > div .project__img {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%) rotate(-5deg);
+}
+#projects .projectWrap > div .project__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#projects .projectWrap > div .project__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#projects .projectWrap > div .project__description .right .order {
+  font-size: 110px;
+  color: #a3b8a7;
+}
+#projects .projectWrap > div .project__description .right .project__title {
+  font-family: "interal";
+  font-size: 100px;
+  z-index: 1000;
+  color: transparent;
+  -webkit-text-stroke: 2px #a3b8a7;
+}
+#projects .projectWrap > div .project__description .left {
+  margin: 80px 70px 0 0;
+}
+#projects .projectWrap > div .project__description .left .tabBtn .tab__btn {
+  margin-right: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  color: #444;
+  background-color: #fff4be;
+}
+#projects .projectWrap > div .project__description .left .tabBtn .selected {
+  background-color: #a3b8a7;
+  color: whitesmoke;
+}
+#projects .projectWrap > div .project__description .left .tabBox {
+  margin-top: 30px;
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  line-height: 25px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "canela-italic";
+  word-break: keep-all;
+  position: relative;
+  background-color: palegoldenrod;
+}
+#projects .projectWrap > div .project__description .left .tabBox > div {
+  position: absolute;
+  display: none;
+}
+#projects .projectWrap > div .project__description .left .tabBox .visible {
+  display: block;
+}
+#projects .projectWrap > div .project__description .left .viewSite {
+  margin-top: 20px;
+}
+#projects .projectWrap > div .project__description .left .viewSite div {
+  width: 48%;
+  margin-bottom: 30px;
+}
+#projects .projectWrap > div .project__description .left .viewSite div a {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+}
+#projects .projectWrap > div .project__description .left .viewSite div a:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: #fff4be;
+  width: 32px;
+  height: 32px;
+  transition: all 0.3s ease;
+}
+#projects .projectWrap > div .project__description .left .viewSite div a span {
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+#projects .projectWrap > div .project__description .left .viewSite div a svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #fff4be;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+#projects .projectWrap > div .project__description .left .viewSite div a svg:hover {
+  transform: translateX(0);
+}
+#projects .projectWrap > div .project__description .left .viewSite div a svg:active {
+  transform: scale(0.96);
+}
+#projects .projectWrap > div .project__description .left .viewSite div a:hover::before {
+  width: 100%;
+  background: #a3b8a7;
+}
+
+/* about me */
+#about {
+  background-color: #a3b8a7;
+  height: 500px;
+  padding: 100px 0;
+}
+#about .aboutme {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px 0;
+}
+#about .aboutme .aboutLeft {
+  width: 50%;
+  text-align: center;
+  margin: 50px auto;
+}
+#about .aboutme .aboutLeft p {
+  font-size: 35px;
+  font-family: "canela";
+  letter-spacing: 0.1em;
+  margin: 20px 0;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff4be;
+}
+#about .aboutme .aboutLeft p .fill {
+  transition: 1s;
+  font-size: 40px;
+}
+#about .aboutme .aboutRight {
+  width: 40%;
+  height: 450px;
+  border: 1px solid white;
+}
+#about .aboutme .aboutRight .meimg {
+  margin: 20px auto;
+  width: 70%;
+  height: 80%;
+  background-image: url(../imgs/me2.png);
+  background-size: cover;
+  background-position: center center;
+}
+#about .aboutme .aboutRight .insta {
+  text-align: right;
+  padding-right: 50px;
+}
+#about .aboutme .aboutRight .insta a {
+  color: white;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+#contact {
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  background-color: #fff4be;
+  position: relative;
+}
+#contact .contact__info {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#contact .contact__info .contact__title {
+  font-size: 60px;
+  color: #4d5f75;
+}
+#contact .contact__info .svgText {
+  margin: 0 auto;
+}
+#contact .contact__info .svgText svg {
+  font-family: "founders";
+  width: 100%;
+  height: 100%;
+}
+#contact .contact__info .svgText svg text {
+  text-transform: uppercase;
+  font-size: 140px;
+  animation: stroke 5s infinite alternate;
+}
+#contact .contact__info .contact__email {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #4f6279;
+}
+#contact .contact__info .contact__links {
+  margin-top: 20px;
+}
+#contact .contact__info .contact__links a {
+  color: #4d5f75;
+  font-size: 30px;
+}
+#contact .contact__info .contact__right {
+  padding-top: 50px;
+}
