@@ -143,15 +143,25 @@ let tl = gsap.timeline({
       delay: 0.2,
       ease: "power3.inOut"
     }
-  }
+  } 
 });
+
 tl.addLabel("start")
+  .from(".text", {color: "transparent"})
+  .addLabel("color")
+  .from(".text", {color: "#615c5c"})
+  .addLabel("spin")
+  .to(".text", {color: "#615c5c"})
+  .addLabel("end");
+
+  tl.addLabel("start")
   .from(".fill", {color: "transparent"})
   .addLabel("color")
-  .from(".fill", {color: "#fdff77"})
+  .from(".fill", {color: "#fff4be"})
   .addLabel("spin")
-  .to(".fill", {color: "#fdff77"})
+  .to(".fill", {color: "#fff4be"})
   .addLabel("end");
+
 
 //aboutme scroll move
 
@@ -233,4 +243,6 @@ tab(tabBtn2, tabBtns2, descriptions2);
 tab(tabBtn3, tabBtns3, descriptions3);
 tab(tabBtn4, tabBtns4, descriptions4);
 tab(tabBtn5, tabBtns5, descriptions5);
+
+
 
