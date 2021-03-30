@@ -1,556 +1,575 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namhyeon's portfolio</title>
     <!-- css -->
-    <link rel="stylesheet" href="css/common.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-      <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-   
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <!-- font -->
     <script src="https://kit.fontawesome.com/7ffbaeea4e.js" crossorigin="anonymous"></script>
     <!-- SCRIPT -->
-   
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/CSSRulePlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-     <script src="js/main.js" defer></script>
-    
-     <!-- favicon -->
-     <link rel="icon" type="image/png" href="imgs/logo2.png">
-    
+    <script src="js/main.js" defer></script>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="imgs/logo2.png">
+
 </head>
+
 <body>
     <div class="loader">
-         <marquee direction="right" scrollamount="10"
-                >it is a good day to have agood day</marquee
-            >
-            <marquee direction="left" scrollamount="30"
-                >it is a good day to have agood day</marquee
-            >
-            <marquee direction="right" scrollamount="20"
-                >it is a good day to have agood day</marquee
-            >
-            <marquee direction="" scrollamount="40"
-                >it is a good day to have agood day</marquee
-            >
-            <div class="intro">
-                <h1 class="intro-title">loading...</h1>
-            </div>
+        <marquee direction="right" scrollamount="10">it is a good day to have agood day</marquee>
+        <marquee direction="left" scrollamount="30">it is a good day to have agood day</marquee>
+        <marquee direction="right" scrollamount="20">it is a good day to have agood day</marquee>
+        <marquee direction="" scrollamount="40">it is a good day to have agood day</marquee>
+        <div class="intro">
+            <h1 class="intro-title">loading...</h1>
+        </div>
     </div>
-  
+
     <nav id="navbar">
         <div class="center">
             <div class="navbar__logo">
-            <h1><a href="#">NamhyeonLee </a></h1>
-            <img src="imgs/logo2.png" alt="logo">
-            <!-- <p>fontend-developer</p> -->
-        </div>
-        <div class="navbar__menu">
-            <ul>
-                <li><a href="#void" data-link="#home">Home</a></li>
-                <li><a href="#void" data-link="#skill">Skill</a></li>
-                <li><a href="#void" data-link="#projects">Project</a></li>
-                <li><a href="#void" data-link="#about">About</a></li>
-                <li><a href="#void" data-link="#contact">Contact</a></li>
-            </ul>
-        </div>
+                <h1><a href="#">NamhyeonLee </a></h1>
+                <img src="imgs/logo2.png" alt="logo">
+                <!-- <p>fontend-developer</p> -->
+            </div>
+            <div class="navbar__menu">
+                <ul>
+                    <li><a href="#void" data-link="#home">Home</a></li>
+                    <li><a href="#void" data-link="#skill">Skill</a></li>
+                    <li><a href="#void" data-link="#projects">Project</a></li>
+                    <li><a href="#void" data-link="#about">About</a></li>
+                    <li><a href="#void" data-link="#contact">Contact</a></li>
+                </ul>
+            </div>
 
         </div>
-        
+
 
     </nav>
-    <div class="container" >
-    <section id="home" >
-        <div class="home__top"></div>
-        <div class="home__container">
-            <div class="profile">
-                <div class="c1"></div>
-                <div class="c1"></div>
-                <div class="c1"></div>
+    <div class="container">
+        <section id="home">
+            <div class="home__top"></div>
+            <div class="home__container">
+                <div class="profile">
+                    <div class="c1"></div>
+                    <div class="c1"></div>
+                    <div class="c1"></div>
+                </div>
+                <h1 class="home__title">Hello, I'm Namhyeon Lee</h1>
+                <h2 class="home__description"> A Web publisher & Frontend-developer</h2>
+                <div class="home__contact">
+                    <a href="https://www.linkedin.com/in/namhyeon-lee-948226149/"><span>Contact Me</span></a>
+                    <div class="cursor"></div>
+                </div>
             </div>
-            <h1 class="home__title">Hello, I'm Namhyeon Lee</h1>
-    <h2 class="home__description"> A Web publisher & Frontend-developer</h2>
-    <div class="home__contact">
-        <a href="https://www.linkedin.com/in/namhyeon-lee-948226149/"><span>Contact Me</span></a>
-        <div class="cursor"></div>
+            <div class="home__bottom"></div>
+
+
+        </section>
+        <section id="skill">
+            <div class="center">
+                <h2 class="skill__title">What I can do</h2>
+                <ul class="skillWrap">
+                    <li>
+                        <a href="#"><i class="far fa-file-code"></i></a>
+                        <h3>HTML5</h3>
+                        <div class="graph">
+                            <div class="html"></div>
+                        </div>
+                        <div class="discription">
+                            <p>Semantic Markup을 중요하게 여기며, HTML를 작성할 때 의미를 부여합니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-css3"></i></a>
+                        <h3>CSS3/SCSS</h3>
+                        <div class="graph">
+                            <div class="css"></div>
+                        </div>
+                        <div class="discription">
+                            <p>SASS(SCSS)와 같은 CSS Preprocessor를 사용할 수 있습니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-js"></i></i></a>
+                        <h3>Javascript</h3>
+                        <div class="graph">
+                            <div class="js"></div>
+                        </div>
+                        <div class="discription">
+                            <p>javascript의 기본 문법을 익히고 API 활용한 날씨앱, 예약 시스템에서 필요한 인원수 체크, 업로드 한 파일 미리보기 등을 구현했습니다. 
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-react"></i></a>
+                        <h3>React</h3>
+                        <div class="graph">
+                            <div class="react"></div>
+                        </div>
+                        <div class="discription">
+                            <p>React 기본 문법을 바탕으로 실전에 필요한 Hooks와 컴포넌트를 통한 재사용, Redux를 이용한 데이트 관리하는 방법을 익히고
+                                활용했습니다. </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-vuejs"></i></a>
+                        <h3>Vue</h3>
+                        <div class="graph">
+                            <div class="vue"></div>
+                        </div>
+                        <div class="discription">
+                            <p>Vue 기본 문법을 익히고 v-bind, v-for, v-if을 통해서 검색 기능을 구현했습니다  </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-fill-drip"></i></a>
+                        <h3>Photoshop & Premiere pro</h3>
+                        <div class="graph">
+                            <div class="etc"></div>
+                        </div>
+                        <div class="discription">
+                            <p>포토샵 등 어도비 프로그램을 다룰 줄 압니다.</p>
+                        </div>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </section>
+        <section id="projects">
+            <div class="center">
+                <div class="projectWrap">
+                    <div class="p project1">
+                        <div class="project__img">
+                            <a href="https://namhyeonlee.github.io/LUSH-RENEWAL-SITE/" target="_blank"> <img
+                                    src="imgs/project1.png" alt="project1"></a>
+                            <div class="scroll-down"><img src="imgs/down-arrow.svg" alt=""></div>
+                        </div>
+                        <div class="project__description">
+                            <div class="right">
+                                <h1 class="order">01.</h1>
+                                <h1 class="project__title">LUSH <br> WEBSITE</h1>
+
+                            </div>
+                            <div class="left">
+                                <div class="tabBtn">
+                                    <button class="tab__btn selected" data-filter="project">project</button>
+                                    <button class="tab__btn" data-filter="function">function</button>
+                                    <button class="tab__btn" data-filter="stack">stack</button>
+
+                                </div>
+
+                                <div class="tabBox">
+                                    <div class="projectText visible" data-type="project" data-type="selected">
+                                        <p class="title">러쉬 리뉴얼 사이트</p>
+                                        <p class="function">
+                                            <span>반응형 웹</span>
+                                            <span>서브 페이지</span>
+                                            <span>Main Page, Sub Page</span>
+                                        </p>
+                                        <div class="stack">
+                                            <span><i class="far fa-file-code"></i></span>
+                                            <span><i class="fab fa-css3"></i></span>
+                                            <span><i class="fab fa-js"></i></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="functionText" data-type="function">
+                                        반응형 웹사이트 <br>
+                                        서브 페이지
+                                    </div>
+                                    <div class="stackText" data-type="stack">
+                                        HTML, CSS, JQUERY
+                                    </div>
+
+                                </div>
+                                <div class="viewSite">
+
+                                    <div>
+                                        <a href="https://namhyeonlee.github.io/LUSH-RENEWAL-SITE/" target="_blank">
+                                            <span>VIEW SITE</span>
+                                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="https://namhyeonlee.github.io/LUSH-RENEWAL-SITE/index-sub.html"
+                                            target="_blank">
+                                            <span>VIEW sub</span>
+                                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="https://github.com/namhyeonlee/LUSH-RENEWAL-SITE" target="_blank">
+                                            <span>VIEW code</span>
+                                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="p project2">
+                        <div class="project__img">
+                            <a href="http://namhyeonlee.dothome.co.kr/" target="_blank"><img src="imgs/project2.png"
+                                    alt=""></a>
+                        </div>
+                        <div class="project__description">
+                            <div class="right">
+                                <h1 class="order">02.</h1>
+                                <h1 class="project__title">TRAVEL <br> WEBSITE</h1>
+
+                            </div>
+                            <div class="left">
+                                <div class="tabBtn tabBtn2">
+                                    <button class="tab__btn selected" data-filter="project">project</button>
+                                    <button class="tab__btn" data-filter="function">function</button>
+                                    <button class="tab__btn" data-filter="stack">stack</button>
+
+                                </div>
+                                <div class="tabBox tabBox2">
+                                    <div class="projectText visible" data-type="project" data-type="selected">
+                                        <p class="title">여행 예약 사이트</p>
+                                        <p class="function">
+                                            <span>반응형 웹</span>
+                                            <span>날짜, 게스트 인원수 선택</span>
+                                            <span>날씨 API - 가고싶은 나라 날씨 검색</span>
+                                            <span>이미지 미리보기 기능</span>
+                                        </p>
+                                        <div class="stack">
+                                            <span><i class="far fa-file-code"></i></span>
+                                            <span><i class="fab fa-sass"></i></span>
+                                            <span><i class="fab fa-js"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="functionText" data-type="function">
+                                        날짜, 게스트 인원수 선택 <br>
+                                        가고싶은 나라 날씨 검색
+                                    </div>
+                                    <div class="stackText" data-type="stack">
+                                        HTML, SCSS, JVASCRIPT, JQUERY
+                                    </div>
+                                </div>
+                                <div class="viewSite">
+
+                                    <div>
+                                        <a href="http://namhyeonlee.dothome.co.kr/" target="_blank">
+                                            <span>VIEW SITE</span>
+                                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="https://github.com/namhyeonlee/TRAVEL-BOOKING-SITE" target="_blank">
+                                            <span>VIEW code</span>
+                                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p project3">
+                        <div class="project__img">
+                            <a href="http://namhyeon.dothome.co.kr/" target="_blank"><img src="imgs/project.gif" alt="">
+                            </a>
+                        </div>
+                        <div class="project__description">
+                            <div class="right">
+                                <h1 class="order">03.</h1>
+                                <h1 class="project__title">E-C0MMERCE <br>SITE</h1>
+
+                            </div>
+                            <div class="left">
+                                <div class="tabBtn tabBtn3">
+                                    <button class="tab__btn selected" data-filter="project">project</button>
+                                    <button class="tab__btn" data-filter="function">function</button>
+                                    <button class="tab__btn" data-filter="stack">stack</button>
+
+                                </div>
+                                <div class="tabBox tabBox3">
+                                    <div class="projectText visible" data-type="project" data-type="selected">
+                                        <p class="title">리액트 쇼핑몰 사이트</p>
+                                        <p class="function">
+                                            <span>반응형 웹</span>
+                                            <span>장바구니 기능 구현</span>
+                                            <span>제품 상세페이지</span>
+                                            <span>Router, Redux, useHistory활용</span>
+                                        </p>
+                                        <div class="stack">
+                                            <span><i class="far fa-file-code"></i></span>
+                                            <span><i class="fab fa-css3"></i></span>
+                                            <span><i class="fab fa-react"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="functionText" data-type="function">
+                                        장바구니 기능 구현<br>
+                                        제품 상세페이지
+                                    </div>
+                                    <div class="stackText" data-type="stack">
+                                        REACT, GSAP
+                                    </div>
+                                </div>
+                                <div class="viewSite">
+
+                                    <div>
+                                        <a href="http://namhyeon.dothome.co.kr/" target="_blank">
+                                            <span>VIEW SITE</span>
+                                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="https://github.com/namhyeonlee/e-commerce" target="_blank">
+                                            <span>VIEW code</span>
+                                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p project4">
+                        <div class="project__img">
+                            <a href="https://namhyeonlee.github.io/casamia-renewal-website/" target="_blank"><img
+                                    src="imgs/project4.png" alt=""> </a>
+                        </div>
+                        <div class="project__description">
+                            <div class="right">
+                                <h1 class="order">04.</h1>
+                                <h1 class="project__title">CASAMIA <br>SITE</h1>
+
+                            </div>
+                            <div class="left">
+                                <div class="tabBtn tabBtn4">
+                                    <button class="tab__btn selected" data-filter="project">project</button>
+                                    <button class="tab__btn" data-filter="function">function</button>
+                                    <button class="tab__btn" data-filter="stack">stack</button>
+
+                                </div>
+                                <div class="tabBox tabBox4">
+                                    <div class="projectText visible" data-type="project" data-type="selected">
+                                        <p class="title">까사미아 리뉴얼 사이트</p>
+                                        <p class="function">
+                                            <span>반응형 웹</span>
+                                            <span>VUE활용 서브페이지</span>
+                                            <span>JQUERY</span>
+                                        </p>
+                                        <div class="stack">
+                                            <span><i class="far fa-file-code"></i></span>
+                                            <span><i class="fab fa-css3"></i></span>
+                                            <span><i class="fab fa-js"></i></span>
+                                            <span><i class="fab fa-vuejs"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="functionText" data-type="function">
+                                        반응형
+                                    </div>
+                                    <div class="stackText" data-type="stack">
+                                        HTML, SCSS, JQUERY, VUE
+                                    </div>
+                                </div>
+                                <div class="viewSite">
+
+                                    <div>
+                                        <a href="https://namhyeonlee.github.io/casamia-renewal-website/"
+                                            target="_blank">
+                                            <span>VIEW SITE</span>
+                                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="http://zkdn4067.dothome.co.kr/brand.html" target="_blank">
+                                            <span>VIEW sub</span>
+                                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="https://github.com/namhyeonlee/casamia-renewal-website"
+                                            target="_blank">
+                                            <span>VIEW code</span>
+                                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p project5">
+                        <div class="project__img">
+                            <a href="https://namhyeonlee.github.io/mymovie-app/" target="_blank"><img
+                                    src="imgs/project5.png" alt=""> </a>
+                        </div>
+                        <div class="project__description">
+                            <div class="right">
+                                <h1 class="order">05.</h1>
+                                <h1 class="project__title">MOVIE <br>APP</h1>
+
+                            </div>
+                            <div class="left">
+                                <div class="tabBtn tabBtn5">
+                                    <button class="tab__btn selected" data-filter="project">project</button>
+                                    <button class="tab__btn" data-filter="function">function</button>
+                                    <button class="tab__btn" data-filter="stack">stack</button>
+
+                                </div>
+                                <div class="tabBox tabBox5">
+                                    <div class="projectText visible" data-type="project" data-type="selected">
+                                        <p class="title">영화API 사이트</p>
+                                        <p class="function">
+                                            <span>현재 인기 있는 영화 20편 정보 구현</span>
+                                            <span>더보기 버튼으로 API정보 추가로 받아와서 구현</span>
+                                            <span>Route,useHistory활용한 디테일 페이지</span>
+                                        </p>
+                                        <div class="stack">
+                                            <span><i class="far fa-file-code"></i></span>
+                                            <span><i class="fab fa-css3"></i></span>
+                                            <span><i class="fab fa-react"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="functionText" data-type="function">
+                                        현재 인기 있는 영화 20편 정보 구현 <br>
+                                        더보기 버튼으로 API정보 추가로 받아와서 구현 <br>
+                                        Route,useHistory활용한 디테일 페이지
+                                    </div>
+                                    <div class="stackText" data-type="stack">
+                                        REACT
+                                    </div>
+                                </div>
+                                <div class="viewSite">
+
+                                    <div>
+                                        <a href="https://namhyeonlee.github.io/mymovie-app/" target="_blank">
+                                            <span>VIEW SITE</span>
+                                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="https://github.com/namhyeonlee/mymovie-app" target="_blank">
+                                            <span>VIEW code</span>
+                                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section id="about">
+            <div class="center aboutme">
+                <div class="aboutLeft skewElem">
+
+                    <p class="text text1"><span class="fill">Say</span> a simple <span class="fill">Hello!</span> </p>
+                    <p class="text text2"><span class="fill">Dependable</span> person</p>
+                    <p class="text text3">passion<span class="fill"> UI/UX</span></p>
+                    <p class="text text4"><span class="fill">energetic</span> and </p>
+                    <p class="text"><span class="fill">eager</span> to learn <span class="fill">new skills</span></p>
+
+                </div>
+                <div class="aboutRight skewElem">
+                    <div class="meimg"></div>
+                    <div class="insta">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#"><i class="far fa-paper-plane"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <section id="contact">
+            <div class="center contact__info">
+                <!-- <h1 class="contact__title">Let's talk</h1> -->
+                <div class="svgText">
+                    <svg viewBox="0 0 1320 300">
+                        <text x="50%" y="50%" dy="40px" text-anchor="middle">LET'S TALK</text>
+                    </svg>
+                </div>
+                <h2 class="contact__email">zkdn4067@gmail.com</h2>
+                <div class="contact__links">
+                    <a href="https://github.com/namhyeonlee"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/namhyeon-lee-948226149/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p class="contact__rights">2020 Dream Coding Nami - All rights reserved
+                </p>
+
+
+            </div>
+
+        </section>
     </div>
-        </div>
-        <div class="home__bottom"></div>
-        
 
-    </section>
-    <section id="skill" >
-        <div class="center">
-             <h2 class="skill__title">What I can do</h2>
-        <ul class="skillWrap">
-            <li>
-                <a href="#"><i class="far fa-file-code"></i></a>
-                <h3>HTML5</h3>
-                <div class="graph">
-                    <div class="html"></div>
-                </div>
-            </li>
-             <li>
-                <a href="#"><i class="fab fa-css3"></i></a>
-                <h3>CSS3/SCSS</h3>
-                <div class="graph">
-                    <div class="css"></div>
-                </div>
-            </li>
-             <li>
-                <a href="#"><i class="fab fa-js"></i></i></a>
-                <h3>Javascript</h3>
-                <div class="graph">
-                    <div class="js"></div>
-                </div>
-            </li>
-             <li>
-                <a href="#"><i class="fab fa-react"></i></a>
-                <h3>React</h3>
-                <div class="graph">
-                    <div class="react"></div>
-                </div>
-            </li>
-             <li>
-                <a href="#"><i class="fab fa-vuejs"></i></a>
-                <h3>Vue</h3>
-                <div class="graph">
-                    <div class="vue"></div>
-                </div>
-            </li>
-             <li>
-                <a href="#"><i class="fas fa-fill-drip"></i></a>
-                <h3>Photoshop & Premiere pro</h3>
-               <div class="graph">
-                    <div class="etc"></div>
-                </div>
-            </li>
-            
-
-        </ul>
-
-        </div>
-
-    </section>
-    <section id="projects">
-        <div class="center">
-         <div class="projectWrap">
-        <div class="p project1">
-            <div class="project__img">
-                <a href="https://namhyeonlee.github.io/LUSH-RENEWAL-SITE/" target="_blank"> <img src="imgs/project1.png" alt="project1"></a>
-                <div class="scroll-down"><img src="imgs/down-arrow.svg" alt=""></div>
-            </div>
-            <div class="project__description">
-                <div class="right">
-                    <h1 class="order">01.</h1>
-                <h1 class="project__title">LUSH <br> WEBSITE</h1>
-
-                </div>
-                <div class="left">
-                    <div class="tabBtn">
-                        <button class="tab__btn selected" data-filter="project">project</button>
-                       <button  class="tab__btn" data-filter="function">function</button>
-                       <button class="tab__btn" data-filter="stack">stack</button>
-
-                    </div>
-                    
-                    <div class="tabBox">
-                        <div class="projectText visible" data-type="project" data-type="selected">
-                            <p class="title">러쉬 리뉴얼 사이트</p>
-                            <p class="function">
-                                <span>반응형 웹</span>
-                                <span>서브 페이지</span>
-                                <span>Main Page, Sub Page</span>
-                            </p>
-                            <div class="stack">
-                                <span><i class="far fa-file-code"></i></span>
-                                <span><i class="fab fa-css3"></i></span>
-                                <span><i class="fab fa-js"></i></span>
-                            </div>
-                            
-                        </div>
-                        <div class="functionText" data-type="function">
-                            반응형 웹사이트 <br>
-                            서브 페이지
-                        </div>
-                        <div class="stackText" data-type="stack">
-                            HTML, CSS, JQUERY
-                        </div>
-
-                    </div>
-                    <div class="viewSite">
-                        
-                        <div>
-                            <a href="https://namhyeonlee.github.io/LUSH-RENEWAL-SITE/" target="_blank">
-                                <span>VIEW SITE</span>
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                             <polyline points="8 1 12 5 8 9"></polyline>
-                              </svg>
-                                
-                            </a>
-                        </div>
-                         <div>
-                            <a href="https://namhyeonlee.github.io/LUSH-RENEWAL-SITE/index-sub.html" target="_blank">
-                                <span>VIEW sub</span>
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                             <polyline points="8 1 12 5 8 9"></polyline>
-                              </svg>
-                                
-                            </a>
-                        </div>
-                         <div>
-                            <a href="https://github.com/namhyeonlee/LUSH-RENEWAL-SITE" target="_blank">
-                                <span>VIEW code</span>
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                             <polyline points="8 1 12 5 8 9"></polyline>
-                              </svg>
-                                
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            
-
-        </div>
-        <div class="p project2">
-            <div class="project__img">
-                <a href="http://namhyeonlee.dothome.co.kr/" target="_blank"><img src="imgs/project2.png" alt=""></a>
-            </div>
-            <div class="project__description">
-                <div class="right">
-                    <h1 class="order">02.</h1>
-                <h1 class="project__title">TRAVEL <br> WEBSITE</h1>
-
-                </div>
-                <div class="left">
-                    <div class="tabBtn tabBtn2">
-                        <button class="tab__btn selected" data-filter="project">project</button>
-                    <button  class="tab__btn" data-filter="function">function</button>
-                    <button class="tab__btn" data-filter="stack">stack</button>
-
-                    </div>
-                    <div class="tabBox tabBox2">
-                        <div class="projectText visible" data-type="project" data-type="selected">
-                            <p class="title">여행 예약 사이트</p>
-                            <p class="function">
-                                <span>반응형 웹</span>
-                                <span>날짜, 게스트 인원수 선택</span>
-                                <span>날씨 API - 가고싶은 나라 날씨 검색</span>
-                                <span>이미지 미리보기 기능</span>
-                            </p>
-                            <div class="stack">
-                                <span><i class="far fa-file-code"></i></span>
-                                <span><i class="fab fa-sass"></i></span>
-                                <span><i class="fab fa-js"></i></span>
-                            </div>
-                        </div>
-                        <div class="functionText" data-type="function">
-                            날짜, 게스트 인원수 선택 <br>
-                            가고싶은 나라 날씨 검색
-                        </div>
-                        <div class="stackText" data-type="stack">
-                            HTML, SCSS, JVASCRIPT, JQUERY
-                        </div>
-                    </div>
-                    <div class="viewSite">
-                        
-                        <div>
-                            <a href="http://namhyeonlee.dothome.co.kr/" target="_blank">
-                                <span>VIEW SITE</span>
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                             <polyline points="8 1 12 5 8 9"></polyline>
-                              </svg>
-                                
-                            </a>
-                        </div>
-                         <div>
-                            <a href="https://github.com/namhyeonlee/TRAVEL-BOOKING-SITE" target="_blank">
-                                <span>VIEW code</span>
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                             <polyline points="8 1 12 5 8 9"></polyline>
-                              </svg>
-                                
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="p project3">
-            <div class="project__img">
-                <a href="http://namhyeon.dothome.co.kr/" target="_blank"><img src="imgs/project.gif" alt=""> </a>
-            </div>
-            <div class="project__description">
-                <div class="right">
-                    <h1 class="order">03.</h1>
-                <h1 class="project__title">E-C0MMERCE <br>SITE</h1>
-
-                </div>
-                <div class="left">
-                    <div class="tabBtn tabBtn3">
-                        <button class="tab__btn selected" data-filter="project">project</button>
-                    <button  class="tab__btn" data-filter="function">function</button>
-                    <button class="tab__btn" data-filter="stack">stack</button>
-
-                    </div>
-                    <div class="tabBox tabBox3">
-                        <div class="projectText visible" data-type="project" data-type="selected">
-                             <p class="title">리액트 쇼핑몰 사이트</p>
-                            <p class="function">
-                                <span>반응형 웹</span>
-                                <span>장바구니 기능 구현</span>
-                                <span>제품 상세페이지</span>
-                                <span>Router, Redux, useHistory활용</span>
-                            </p>
-                            <div class="stack">
-                                <span><i class="far fa-file-code"></i></span>
-                                <span><i class="fab fa-css3"></i></span>
-                                <span><i class="fab fa-react"></i></span>
-                            </div>
-                        </div>
-                        <div class="functionText" data-type="function">
-                            장바구니 기능 구현<br>
-                            제품 상세페이지
-                        </div>
-                        <div class="stackText" data-type="stack">
-                           REACT, GSAP
-                        </div>
-                    </div>
-                    <div class="viewSite">
-                        
-                        <div>
-                            <a href="http://namhyeon.dothome.co.kr/" target="_blank">
-                                <span>VIEW SITE</span>
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                             <polyline points="8 1 12 5 8 9"></polyline>
-                              </svg>
-                                
-                            </a>
-                        </div>
-                         <div>
-                            <a href="https://github.com/namhyeonlee/e-commerce" target="_blank">
-                                <span>VIEW code</span>
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                             <polyline points="8 1 12 5 8 9"></polyline>
-                              </svg>
-                                
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="p project4">
-            <div class="project__img">
-                <a href="https://namhyeonlee.github.io/casamia-renewal-website/" target="_blank"><img src="imgs/project4.png" alt=""> </a>
-            </div>
-            <div class="project__description">
-                <div class="right">
-                    <h1 class="order">04.</h1>
-                <h1 class="project__title">CASAMIA <br>SITE</h1>
-
-                </div>
-                <div class="left">
-                    <div class="tabBtn tabBtn4">
-                        <button class="tab__btn selected" data-filter="project">project</button>
-                    <button  class="tab__btn" data-filter="function">function</button>
-                    <button class="tab__btn" data-filter="stack">stack</button>
-
-                    </div>
-                    <div class="tabBox tabBox4">
-                        <div class="projectText visible" data-type="project" data-type="selected">
-                             <p class="title">까사미아 리뉴얼 사이트</p>
-                            <p class="function">
-                                <span>반응형 웹</span>
-                                <span>VUE활용 서브페이지</span>
-                                <span>JQUERY</span>
-                            </p>
-                            <div class="stack">
-                                <span><i class="far fa-file-code"></i></span>
-                                <span><i class="fab fa-css3"></i></span>
-                                <span><i class="fab fa-js"></i></span>
-                                <span><i class="fab fa-vuejs"></i></span>
-                            </div>
-                        </div>
-                        <div class="functionText" data-type="function">
-                            반응형
-                        </div>
-                        <div class="stackText" data-type="stack">
-                            HTML, SCSS, JQUERY, VUE
-                        </div>
-                    </div>
-                    <div class="viewSite">
-                        
-                        <div>
-                            <a href="https://namhyeonlee.github.io/casamia-renewal-website/" target="_blank">
-                                <span>VIEW SITE</span>
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                             <polyline points="8 1 12 5 8 9"></polyline>
-                              </svg>
-                                
-                            </a>
-                        </div>
-                        <div>
-                            <a href="http://zkdn4067.dothome.co.kr/brand.html" target="_blank">
-                                <span>VIEW sub</span>
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                             <polyline points="8 1 12 5 8 9"></polyline>
-                              </svg>
-                                
-                            </a>
-                        </div>
-                         <div>
-                            <a href="https://github.com/namhyeonlee/casamia-renewal-website" target="_blank">
-                                <span>VIEW code</span>
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                             <polyline points="8 1 12 5 8 9"></polyline>
-                              </svg>
-                                
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="p project5">
-            <div class="project__img">
-                <a href="https://namhyeonlee.github.io/mymovie-app/" target="_blank"><img src="imgs/project5.png" alt=""> </a>
-            </div>
-            <div class="project__description">
-                <div class="right">
-                    <h1 class="order">05.</h1>
-                <h1 class="project__title">MOVIE <br>APP</h1>
-
-                </div>
-                <div class="left">
-                    <div class="tabBtn tabBtn5">
-                        <button class="tab__btn selected" data-filter="project">project</button>
-                    <button  class="tab__btn" data-filter="function">function</button>
-                    <button class="tab__btn" data-filter="stack">stack</button>
-
-                    </div>  
-                    <div class="tabBox tabBox5">
-                        <div class="projectText visible" data-type="project" data-type="selected">
-                            <p class="title">영화API 사이트</p>
-                            <p class="function">
-                                <span>현재 인기 있는 영화 20편 정보 구현</span>
-                                <span>더보기 버튼으로 API정보 추가로 받아와서 구현</span>
-                                <span>Route,useHistory활용한 디테일 페이지</span>
-                            </p>
-                            <div class="stack">
-                                <span><i class="far fa-file-code"></i></span>
-                                <span><i class="fab fa-css3"></i></span>
-                                <span><i class="fab fa-react"></i></span>
-                            </div>
-                        </div>
-                        <div class="functionText" data-type="function">
-                            현재 인기 있는 영화 20편 정보 구현 <br>
-                            더보기 버튼으로 API정보 추가로 받아와서 구현 <br>
-                            Route,useHistory활용한 디테일 페이지
-                        </div>
-                        <div class="stackText" data-type="stack">
-                            REACT
-                        </div>
-                    </div>
-                    <div class="viewSite">
-                        
-                        <div>
-                            <a href="https://namhyeonlee.github.io/mymovie-app/" target="_blank">
-                                <span>VIEW SITE</span>
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                             <polyline points="8 1 12 5 8 9"></polyline>
-                              </svg>
-                                
-                            </a>
-                        </div>
-                         <div>
-                            <a href="https://github.com/namhyeonlee/mymovie-app" target="_blank">
-                                <span>VIEW code</span>
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                             <polyline points="8 1 12 5 8 9"></polyline>
-                              </svg>
-                                
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-            </div>
-        </div>
-        
-    </section>
-<section id="about" >
-    <div class="center aboutme">
-        <div class="aboutLeft skewElem">
-           
-            <p class="text text1"><span class="fill">Say</span> a simple <span class="fill">Hello!</span> </p>
-            <p class="text text2"><span class="fill">Dependable</span> person</p>
-            <p class="text text3">passion<span class="fill"> UI/UX</span></p>
-            <p class="text text4"><span class="fill">energetic</span> and  </p>
-            <p class="text"><span class="fill">eager</span> to learn <span class="fill">new skills</span></p>
- 
-        </div>
-        <div class="aboutRight skewElem">
-            <div class="meimg"></div>
-            <div class="insta">
-                <a href="#"><i class="far fa-heart"></i></a>
-                <a href="#"><i class="far fa-paper-plane"></i></a>
-            </div>
-        </div>
-        
-    </div>
-
-    
-
-</section>
-
-<section id="contact" >
-    <div class="center contact__info">
-        <!-- <h1 class="contact__title">Let's talk</h1> -->
-        <div class="svgText">
-        <svg viewBox="0 0 1320 300">
-	<text x="50%" y="50%" dy="40px" text-anchor="middle">LET'S TALK</text>
-</svg>
-</div>
-  <h2 class="contact__email">zkdn4067@gmail.com</h2>
-  <div class="contact__links">
-    <a href="https://github.com/namhyeonlee"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/namhyeon-lee-948226149/"><i class="fab fa-linkedin"></i></a>
-  </div>
-  <p class="contact__rights">2020 Dream Coding Nami - All rights reserved
-  </p>
-  
-
-    </div>
-  
-</section>
-    </div>
- 
 </body>
 
 </html>
