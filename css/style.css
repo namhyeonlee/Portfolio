@@ -336,6 +336,11 @@ body {
 #skill .skillWrap li .graph .etc {
   width: 70%;
 }
+#skill .skillWrap li .discription {
+  margin: 10px auto;
+  width: 50%;
+  text-align: left;
+}
 
 /* projects */
 #projects {
