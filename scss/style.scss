@@ -13,6 +13,19 @@ $font2 : 'canela-italic';
 $font3 : 'founders';
 $font4 : 'interal';
 
+/* 반응형 사이즈 */
+$mobile:767px;
+$mobile640:640px;
+$mobile360:360px;
+$pc-min:1200px;
+
+/* mixin */
+@mixin media($size) {
+    @media screen and (max-width:$size) {
+        @content;
+    }
+}
+
 //keyframes
 
 @keyframes move {
@@ -119,6 +132,9 @@ body {
 .center {
     width: 1200px;
     margin: auto;
+    @include media($mobile) {
+        width: 100%;
+    }
 
 }
 
@@ -168,6 +184,10 @@ body {
     height: 50px;
     z-index: 100;
     position: fixed;
+    min-width: $pc-min;
+    @include media($mobile){
+        min-width: 100%;
+    }
     
 
     .center {
@@ -176,6 +196,9 @@ body {
         justify-content: space-between;
         padding-top: 30px;
         margin: 0 auto;
+        @include media($mobile) {
+            width: 100%;
+        }
 
         .navbar__logo {
             position: relative;
@@ -365,6 +388,9 @@ body {
 #skill {
     text-align: center;
     background: $yellow;
+    @include media($mobile) {
+        width: 100%;
+    }
 
 
     .skill__title {
@@ -398,11 +424,18 @@ body {
         flex-wrap: wrap;
         align-items: center;
         padding-bottom: 80px;
+        @include media($mobile) {
+            width: 100%;
+            height: 800px;
+        }
 
 
         li {
             width: 30%;
             margin: 1.5%;
+            @include media($mobile) {
+                width: 45%;
+            }
 
             a {
                 display: block;
@@ -578,6 +611,9 @@ body {
                     z-index: 1000;
                     color: transparent;
                     -webkit-text-stroke: 2px #a3b8a7;
+                    @include media($mobile) {
+                        font-size: 50px;
+                    }
                 }
 
             }
@@ -743,17 +779,29 @@ body {
     background-color: $green;
     height: 500px;
     padding: 100px 0;
+    min-width: $pc-min;
+    @include media($mobile) {
+        min-width: 100%;
+        height: 300px;
+        padding: 50px 0;
+    }
     
     
      .aboutme{
          display: flex;
          justify-content: space-between;
         padding-top: 50px 0;
+        @include media($mobile) {
+            padding-top: 0;
+        }
 
           .aboutLeft {
              width: 50%;
               text-align: center;
               margin: 30px auto;
+              @include media($mobile) {
+                  margin: 0;
+              }
              
               p {
                   font-size: 50px;
@@ -762,9 +810,13 @@ body {
                   margin: 20px 0;
                   color: #615c5c;
                   color: transparent;
-                   transition: 1s;
-                //   -webkit-text-stroke: 2px #fff4be;
-                // //   -webkit-text-stroke: 2px #444;
+                  transition: 1s;
+                  @include media($mobile) {
+                      font-size: 30px;
+                      @include media($mobile) {
+                          margin: 10px 0;
+                      }
+                  }
 
                   .fill {
                       padding-top: 10px;
@@ -777,6 +829,10 @@ body {
               width: 40%;
               height: 450px;
               border: 1px solid white;
+              @include media($mobile) {
+                  height: 300px;
+                  margin-right: 20px;
+              }
             
               .meimg{
                   margin: 20px auto;
@@ -792,10 +848,16 @@ body {
               .insta{
                   text-align: right;
                   padding-right: 50px;
+                  @include media($mobile) {
+                      padding-right: 10px;
+                  }
                   a{
                       color: white;
                       font-size: $font-md;
                       margin-right: 20px;
+                      @include media($mobile) {
+                          margin: 10px;
+                      }
                   }
               }
           }
@@ -815,6 +877,11 @@ body {
     height: 500px;
     background-color: $yellow;
     position: relative;
+    min-width: $pc-min;
+    @include media($mobile) {
+        min-width: 100%;
+        height: 300px;
+    }
 
     .contact__info {
        position: absolute;

@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/* 반응형 사이즈 */
+/* mixin */
 @keyframes move {
   0% {
     transform: rotate(0deg);
@@ -75,6 +78,11 @@ body {
   width: 1200px;
   margin: auto;
 }
+@media screen and (max-width: 767px) {
+  .center {
+    width: 100%;
+  }
+}
 
 /* loader */
 .loader {
@@ -117,6 +125,12 @@ body {
   height: 50px;
   z-index: 100;
   position: fixed;
+  min-width: 1200px;
+}
+@media screen and (max-width: 767px) {
+  #navbar {
+    min-width: 100%;
+  }
 }
 #navbar .center {
   position: relative;
@@ -124,6 +138,11 @@ body {
   justify-content: space-between;
   padding-top: 30px;
   margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  #navbar .center {
+    width: 100%;
+  }
 }
 #navbar .center .navbar__logo {
   position: relative;
@@ -257,6 +276,11 @@ body {
   text-align: center;
   background: #fff4be;
 }
+@media screen and (max-width: 767px) {
+  #skill {
+    width: 100%;
+  }
+}
 #skill .skill__title {
   font-family: "canela-italic";
   font-size: 40px;
@@ -283,9 +307,20 @@ body {
   align-items: center;
   padding-bottom: 80px;
 }
+@media screen and (max-width: 767px) {
+  #skill .skillWrap {
+    width: 100%;
+    height: 800px;
+  }
+}
 #skill .skillWrap li {
   width: 30%;
   margin: 1.5%;
+}
+@media screen and (max-width: 767px) {
+  #skill .skillWrap li {
+    width: 45%;
+  }
 }
 #skill .skillWrap li a {
   display: block;
@@ -406,6 +441,11 @@ body {
   color: transparent;
   -webkit-text-stroke: 2px #a3b8a7;
 }
+@media screen and (max-width: 767px) {
+  #projects .projectWrap > div .project__description .right .project__title {
+    font-size: 50px;
+  }
+}
 #projects .projectWrap > div .project__description .left {
   margin: 80px 70px 0 0;
 }
@@ -525,16 +565,34 @@ body {
   background-color: #a3b8a7;
   height: 500px;
   padding: 100px 0;
+  min-width: 1200px;
+}
+@media screen and (max-width: 767px) {
+  #about {
+    min-width: 100%;
+    height: 300px;
+    padding: 50px 0;
+  }
 }
 #about .aboutme {
   display: flex;
   justify-content: space-between;
   padding-top: 50px 0;
 }
+@media screen and (max-width: 767px) {
+  #about .aboutme {
+    padding-top: 0;
+  }
+}
 #about .aboutme .aboutLeft {
   width: 50%;
   text-align: center;
   margin: 30px auto;
+}
+@media screen and (max-width: 767px) {
+  #about .aboutme .aboutLeft {
+    margin: 0;
+  }
 }
 #about .aboutme .aboutLeft p {
   font-size: 50px;
@@ -545,6 +603,16 @@ body {
   color: transparent;
   transition: 1s;
 }
+@media screen and (max-width: 767px) {
+  #about .aboutme .aboutLeft p {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  #about .aboutme .aboutLeft p {
+    margin: 10px 0;
+  }
+}
 #about .aboutme .aboutLeft p .fill {
   padding-top: 10px;
 }
@@ -552,6 +620,12 @@ body {
   width: 40%;
   height: 450px;
   border: 1px solid white;
+}
+@media screen and (max-width: 767px) {
+  #about .aboutme .aboutRight {
+    height: 300px;
+    margin-right: 20px;
+  }
 }
 #about .aboutme .aboutRight .meimg {
   margin: 20px auto;
@@ -565,10 +639,20 @@ body {
   text-align: right;
   padding-right: 50px;
 }
+@media screen and (max-width: 767px) {
+  #about .aboutme .aboutRight .insta {
+    padding-right: 10px;
+  }
+}
 #about .aboutme .aboutRight .insta a {
   color: white;
   font-size: 18px;
   margin-right: 20px;
+}
+@media screen and (max-width: 767px) {
+  #about .aboutme .aboutRight .insta a {
+    margin: 10px;
+  }
 }
 
 #contact {
@@ -577,6 +661,13 @@ body {
   height: 500px;
   background-color: #fff4be;
   position: relative;
+  min-width: 1200px;
+}
+@media screen and (max-width: 767px) {
+  #contact {
+    min-width: 100%;
+    height: 300px;
+  }
 }
 #contact .contact__info {
   position: absolute;
