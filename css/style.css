@@ -98,6 +98,11 @@ body {
   font-size: 200px;
   font-family: "canela-italic";
 }
+@media screen and (max-width: 767px) {
+  .loader marquee {
+    font-size: 150px;
+  }
+}
 .loader .intro {
   position: absolute;
   top: 50%;
@@ -111,6 +116,11 @@ body {
   font-weight: 200;
   color: #fff;
   font-family: "canela-italic";
+}
+@media screen and (max-width: 767px) {
+  .loader .intro h1 {
+    font-size: 100px;
+  }
 }
 
 /* navbar */
@@ -310,7 +320,8 @@ body {
 @media screen and (max-width: 767px) {
   #skill .skillWrap {
     width: 100%;
-    height: 800px;
+    height: 900px;
+    padding: 0;
   }
 }
 #skill .skillWrap li {
@@ -320,6 +331,7 @@ body {
 @media screen and (max-width: 767px) {
   #skill .skillWrap li {
     width: 45%;
+    height: 35%;
   }
 }
 #skill .skillWrap li a {
@@ -337,6 +349,11 @@ body {
 #skill .skillWrap li h3 {
   font-size: 18px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  #skill .skillWrap li h3 {
+    font-size: 14px;
+  }
 }
 #skill .skillWrap li .graph {
   margin: 0 auto;
@@ -449,7 +466,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   #projects .projectWrap > div .project__description .right .project__title {
-    font-size: 50px;
+    font-size: 60px;
   }
 }
 #projects .projectWrap > div .project__description .left {
@@ -613,13 +630,11 @@ body {
 @media screen and (max-width: 767px) {
   #about .aboutme .aboutLeft p {
     font-size: 30px;
-    margin: 10px 0;
   }
 }
 @media screen and (max-width: 640px) {
   #about .aboutme .aboutLeft p {
     font-size: 25px;
-    margin: 10px 0;
   }
 }
 #about .aboutme .aboutLeft p .fill {

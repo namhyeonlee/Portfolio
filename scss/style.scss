@@ -155,6 +155,11 @@ body {
         color: #646464;
         font-size: 200px;
         font-family: $font2;
+
+        @include media($mobile) {
+            font-size: 150px;
+        }
+
     }
 
     .intro {
@@ -170,6 +175,10 @@ body {
             font-weight: 200;
             color: #fff;
             font-family: $font2;
+            @include media($mobile) {
+                font-size: 100px;
+            }
+
         }
     }
 
@@ -428,7 +437,8 @@ body {
         padding-bottom: 80px;
         @include media($mobile) {
             width: 100%;
-            height: 800px;
+            height: 900px;
+            padding: 0;
         }
 
 
@@ -437,6 +447,7 @@ body {
             margin: 1.5%;
             @include media($mobile) {
                 width: 45%;
+                height: 35%;
             }
 
             a {
@@ -462,6 +473,7 @@ body {
                 font-size: 40px;
                 color: rgb(213, 255, 242);
                 line-height: 100px;
+               
 
 
 
@@ -470,6 +482,9 @@ body {
             h3 {
                 font-size: $font-md;
                 margin-bottom: 20px;
+                @include media($mobile) {
+                    font-size: $font-sm;
+                }
             }
 
             .graph {
@@ -616,7 +631,7 @@ body {
                     color: transparent;
                     -webkit-text-stroke: 2px #a3b8a7;
                     @include media($mobile) {
-                        font-size: 50px;
+                        font-size: 60px;
                     }
                 }
 
@@ -818,11 +833,11 @@ body {
                   transition: 1s;
                   @include media($mobile) {
                       font-size: 30px;
-                      margin: 10px 0;
+                     
                   }
                   @include media($mobile640) {
                       font-size: 25px;
-                      margin: 10px 0;
+                      
                   }
 
                   .fill {
