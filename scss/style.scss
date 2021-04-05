@@ -194,6 +194,7 @@ body {
     min-width: $pc-min;
     @include media($mobile){
         min-width: 100%;
+
     }
     
 
@@ -211,16 +212,16 @@ body {
             position: relative;
             height: 50px;
             width: 160px;
+            
 
             h1 {
                 a {
                     font-size: $font-md;
                     font-family: $font1;
+                    @include media($mobile) {
+                        font-size: $font-sm;
+                    }
 
-                }
-
-                p {
-                    font-family: $font1;
                 }
             }
 
@@ -228,8 +229,11 @@ body {
                 width: 70px;
                 height: 70px;
                 position: absolute;
-                top: -18px;
-                right: 0;
+                top: -30px;
+                right: -50px;
+                @include media($mobile) {
+                   display: none;
+                }
             }
         }
 
@@ -242,6 +246,12 @@ body {
                 li {
                     font-size: $font-sm;
                     margin-left: 10px;
+                    box-sizing: border-box;
+                    @include media($mobile) {
+                        margin-left: 0;
+                        padding-left: 5px;
+                        font-size: 13px;
+                    }
                 }
             }
 
@@ -259,19 +269,35 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
+    @include media($mobile) {
+        width: 100%;
+        height: 600px;
 
-    .blocks{
-        display: flex;
-        font-size: 140px;
-        color: #8d785b;
-        position: absolute;
+    }
+    .center{
+        @include media($mobile){
+            width: 100%;
+            
+        }
     }
 
+
+    // .blocks{
+    //     display: flex;
+    //     font-size: 140px;
+    //     color: #8d785b;
+    //     position: absolute;
+    // }
+
     .home__top {
+        width: 100%;
         height: 50%;
         background: $yellow;
+        min-width: $pc-min;
+        @include media($mobile){
+            min-width: 100%;
+        }
        
-
     }
 
     .home__container {
@@ -283,8 +309,6 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-         
-       
 
         .profile {
             width: 350px;
@@ -292,6 +316,12 @@ body {
             border-radius: 50%;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.20);
             position: relative;
+
+            @include media($mobile){
+                margin-top: 50px;
+                width: 250px;
+                height: 250px;
+            }
            
 
             background: {
@@ -339,6 +369,10 @@ body {
             margin-top: 50px;
             font-size: $font-title;
             font-family: $font2;
+         @include media($mobile) {
+             font-size: $font-lg;
+         }
+
         }
 
         .home__description {
@@ -346,6 +380,9 @@ body {
             font-size: $font-md;
             font-weight: lighter;
             color: rgb(94, 93, 93);
+            @include media($mobile) {
+                font-size: $font-sm;
+            }
 
         }
 
@@ -385,8 +422,15 @@ body {
     }
 
     .home__bottom {
+        width: 100%;
         height: 50%;
         background: $green;
+        min-width: $pc-min;
+        @include media($mobile) {
+            min-width: 100%;
+            height: 40%;
+        
+        }
     }
 }
 
@@ -397,6 +441,7 @@ body {
     background: $yellow;
     @include media($mobile) {
         width: 100%;
+        
     }
 
 
@@ -494,6 +539,12 @@ body {
                 border-radius: 30px;
                 background-color: $green;
                 position: relative;
+                @include media($mobile){
+                    width: 150px;
+                }
+                 @include media($mobile640) {
+                     width: 120px;
+                 }
                 >div{
                     position: absolute;
                     width: 100%;
@@ -526,6 +577,10 @@ body {
                 margin: 10px auto;
                 width: 50%;
                 text-align: left;
+                 
+                @include media($mobile){
+                    width: 100%;
+                }
             }
 
         }
@@ -542,6 +597,7 @@ body {
     min-width: $pc-min;
     @include media($mobile) {
         min-width: 100%;
+     
     }
 
     .center {
@@ -803,13 +859,15 @@ body {
         min-width: 100%;
         height: 300px;
         padding: 50px 0;
+    
     }
     
     
      .aboutme{
          display: flex;
          justify-content: space-between;
-        padding-top: 50px 0;
+         padding-top: 50px 0;
+
         @include media($mobile) {
             padding-top: 0;
             width: 100%;
@@ -820,7 +878,8 @@ body {
               text-align: center;
               margin: 30px auto;
               @include media($mobile) {
-                  margin: 0;
+                //   margin: 0 0 0 150px;
+                  
               }
              
               p {
@@ -848,12 +907,12 @@ body {
           
           }
           .aboutRight{
-              width: 40%;
+              width: 50%;
               height: 450px;
               border: 1px solid white;
               @include media($mobile) {
                   height: 300px;
-                  margin-right: 20px;
+                  
               }
             
               .meimg{
@@ -902,7 +961,7 @@ body {
     min-width: $pc-min;
     @include media($mobile) {
         min-width: 100%;
-        height: 300px;
+        height: 200px;
     }
 
     .contact__info {

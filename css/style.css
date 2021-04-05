@@ -158,15 +158,22 @@ body {
   font-size: 18px;
   font-family: "canela";
 }
-#navbar .center .navbar__logo h1 p {
-  font-family: "canela";
+@media screen and (max-width: 767px) {
+  #navbar .center .navbar__logo h1 a {
+    font-size: 14px;
+  }
 }
 #navbar .center .navbar__logo img {
   width: 70px;
   height: 70px;
   position: absolute;
-  top: -18px;
-  right: 0;
+  top: -30px;
+  right: -50px;
+}
+@media screen and (max-width: 767px) {
+  #navbar .center .navbar__logo img {
+    display: none;
+  }
 }
 #navbar .center .navbar__menu ul {
   display: flex;
@@ -176,6 +183,14 @@ body {
 #navbar .center .navbar__menu ul li {
   font-size: 14px;
   margin-left: 10px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+  #navbar .center .navbar__menu ul li {
+    margin-left: 0;
+    padding-left: 5px;
+    font-size: 13px;
+  }
 }
 
 /* container */
@@ -185,15 +200,27 @@ body {
   height: 100vh;
   position: relative;
 }
-#home .blocks {
-  display: flex;
-  font-size: 140px;
-  color: #8d785b;
-  position: absolute;
+@media screen and (max-width: 767px) {
+  #home {
+    width: 100%;
+    height: 600px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #home .center {
+    width: 100%;
+  }
 }
 #home .home__top {
+  width: 100%;
   height: 50%;
   background: #fff4be;
+  min-width: 1200px;
+}
+@media screen and (max-width: 767px) {
+  #home .home__top {
+    min-width: 100%;
+  }
 }
 #home .home__container {
   position: absolute;
@@ -215,6 +242,13 @@ body {
   background-image: url(../imgs/profile.jpeg);
   background-position: 30% 10%;
   background-size: 120% 130%;
+}
+@media screen and (max-width: 767px) {
+  #home .home__container .profile {
+    margin-top: 50px;
+    width: 250px;
+    height: 250px;
+  }
 }
 #home .home__container .profile > div {
   position: absolute;
@@ -240,11 +274,21 @@ body {
   font-size: 32px;
   font-family: "canela-italic";
 }
+@media screen and (max-width: 767px) {
+  #home .home__container .home__title {
+    font-size: 24px;
+  }
+}
 #home .home__container .home__description {
   margin-top: 10px;
   font-size: 18px;
   font-weight: lighter;
   color: #5e5d5d;
+}
+@media screen and (max-width: 767px) {
+  #home .home__container .home__description {
+    font-size: 14px;
+  }
 }
 #home .home__container .home__contact a {
   transition: all 0.3s ease;
@@ -272,8 +316,16 @@ body {
   transition: transfrom 0.3s ease;
 }
 #home .home__bottom {
+  width: 100%;
   height: 50%;
   background: #a3b8a7;
+  min-width: 1200px;
+}
+@media screen and (max-width: 767px) {
+  #home .home__bottom {
+    min-width: 100%;
+    height: 40%;
+  }
 }
 
 /* skills */
@@ -363,6 +415,16 @@ body {
   background-color: #a3b8a7;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  #skill .skillWrap li .graph {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 640px) {
+  #skill .skillWrap li .graph {
+    width: 120px;
+  }
+}
 #skill .skillWrap li .graph > div {
   position: absolute;
   width: 100%;
@@ -392,6 +454,11 @@ body {
   margin: 10px auto;
   width: 50%;
   text-align: left;
+}
+@media screen and (max-width: 767px) {
+  #skill .skillWrap li .discription {
+    width: 100%;
+  }
 }
 
 /* projects */
@@ -613,11 +680,6 @@ body {
   text-align: center;
   margin: 30px auto;
 }
-@media screen and (max-width: 767px) {
-  #about .aboutme .aboutLeft {
-    margin: 0;
-  }
-}
 #about .aboutme .aboutLeft p {
   font-size: 50px;
   font-family: "canela";
@@ -641,14 +703,13 @@ body {
   padding-top: 10px;
 }
 #about .aboutme .aboutRight {
-  width: 40%;
+  width: 50%;
   height: 450px;
   border: 1px solid white;
 }
 @media screen and (max-width: 767px) {
   #about .aboutme .aboutRight {
     height: 300px;
-    margin-right: 20px;
   }
 }
 #about .aboutme .aboutRight .meimg {
@@ -690,7 +751,7 @@ body {
 @media screen and (max-width: 767px) {
   #contact {
     min-width: 100%;
-    height: 300px;
+    height: 200px;
   }
 }
 #contact .contact__info {
