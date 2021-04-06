@@ -90,18 +90,18 @@ gsap.from(".graph>div", {
   ease: "none"
 });
 
-gsap.from(".aboutme>div", {
-  scrollTrigger: {
-    trigger: "#about",
-    scrub: true,
-    pin: true,
-    start: "top top",
-    end: "+=10%"
-  },
-  x: -100, 
-  transformOrigin: "left center", 
-  ease: "none"
-});
+// gsap.from(".aboutme>div", {
+//   scrollTrigger: {
+//     trigger: "#about",
+//     scrub: true,
+//     pin: true,
+//     start: "top top",
+//     end: "+=10%"
+//   },
+//   x: -100,  
+//   transformOrigin: "left center", 
+//   ease: "none"
+// });
 
 
 
@@ -112,55 +112,55 @@ ScrollTrigger.defaults({
 });
 
 //project animation
-let sections = gsap.utils.toArray(".p");
+// let sections = gsap.utils.toArray(".p");
 
-gsap.to(sections, {
-  xPercent: -100 * (sections.length - 1),
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".projectWrap ",
-      pin: true,
-    scrub: 1,
-    snap: 1 / (sections.length - 1),
-    // base vertical scrolling on how wide the container is so it feels more natural.
-    end: () => "+=" + document.querySelector(".projectWrap ").offsetWidth
-  }
-});
+// gsap.to(sections, {
+//   xPercent: -100 * (sections.length - 1),
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: ".projectWrap ",
+//       pin: true,
+//     scrub: 1,
+//     snap: 1 / (sections.length - 1),
+//     // base vertical scrolling on how wide the container is so it feels more natural.
+//     end: () => "+=" + document.querySelector(".projectWrap ").offsetWidth
+//   }
+// });
 
-// about me text animation
+//about me text animation
 
-let tl = gsap.timeline({
+// let tl = gsap.timeline({
    
-  scrollTrigger: {
-    trigger: "#about",
-    pin: true,
-    start: "-=400",
-    end: "+=200",
-    scrub: 1,
-    snap: {
-      snapTo: "labels",
-      duration: { min: 0.2, max: 0.3 },
-      delay: 0.2,
-      ease: "power3.inOut"
-    }
-  } 
-});
+//   scrollTrigger: {
+//     trigger: "#about",
+//     pin: true,
+//     start: "-=400",
+//     end: "+=200",
+//     scrub: 1,
+//     snap: {
+//       snapTo: "labels",
+//       duration: { min: 0.2, max: 0.3 },
+//       delay: 0.2,
+//       ease: "power3.inOut"
+//     }
+//   } 
+// });
 
-tl.addLabel("start")
-  .from(".text", {color: "transparent"})
-  .addLabel("color")
-  .from(".text", {color: "#615c5c"})
-  .addLabel("spin")
-  .to(".text", {color: "#615c5c"})
-  .addLabel("end");
+// tl.addLabel("start")
+//   .from(".text", {color: "transparent"})
+//   .addLabel("color")
+//   .from(".text", {color: "#615c5c"})
+//   .addLabel("spin")
+//   .to(".text", {color: "#615c5c"})
+//   .addLabel("end");
 
-  tl.addLabel("start")
-  .from(".fill", {color: "transparent"})
-  .addLabel("color")
-  .from(".fill", {color: "#fff4be"})
-  .addLabel("spin")
-  .to(".fill", {color: "#fff4be"})
-  .addLabel("end");
+//   tl.addLabel("start")
+//   .from(".fill", {color: "transparent"})
+//   .addLabel("color")
+//   .from(".fill", {color: "#fff4be"})
+//   .addLabel("spin")
+//   .to(".fill", {color: "#fff4be"})
+//   .addLabel("end");
 
 
 //aboutme scroll move
