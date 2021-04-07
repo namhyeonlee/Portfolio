@@ -130,10 +130,10 @@ body {
 
 /* navbar */
 #navbar {
-  background: transparent;
+  background-color: #fff4be;
   width: 100%;
   height: 50px;
-  z-index: 100;
+  z-index: 10000;
   position: fixed;
   min-width: 1200px;
 }
@@ -632,6 +632,7 @@ body {
   color: #3c435a;
 }
 #projects .projectWrap > div .project__description .left .tabBox .projectText .mViewsite {
+  display: none;
   margin-top: 10px;
 }
 @media screen and (max-width: 767px) {
@@ -734,6 +735,8 @@ body {
 #about .aboutme .aboutLeft {
   width: 50%;
   position: relative;
+  box-sizing: border-box;
+  padding: 20px;
 }
 #about .aboutme .aboutLeft ul {
   width: 100%;
@@ -743,6 +746,23 @@ body {
 }
 #about .aboutme .aboutLeft ul li {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  #about .aboutme .aboutLeft ul li {
+    margin-bottom: 10px;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 640px) {
+  #about .aboutme .aboutLeft ul li {
+    margin-bottom: 10px;
+    width: 150px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #about .aboutme .aboutLeft ul li {
+    width: 130px;
+  }
 }
 #about .aboutme .aboutLeft ul li .title {
   color: #615c5c;
@@ -754,9 +774,15 @@ body {
     font-size: 18px;
   }
 }
+@media screen and (max-width: 640px) {
+  #about .aboutme .aboutLeft ul li .title {
+    font-size: 14px;
+  }
+}
 #about .aboutme .aboutLeft ul li .description {
   margin-top: 10px;
   font-size: 14px;
+  line-height: 1.2;
 }
 @media screen and (max-width: 767px) {
   #about .aboutme .aboutLeft ul li .description {
@@ -770,7 +796,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   #about .aboutme .aboutRight {
-    height: 300px;
+    height: 400px;
   }
 }
 #about .aboutme .aboutRight .meimg {
